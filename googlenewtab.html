@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="googlenewtab.css">
+    <script src="https://kit.fontawesome.com/af3102003b.js" crossorigin="anonymous"></script>
+    <title>Google New Tab</title>
+</head>
+<body>
+  <section class="search-area">
+    <img class="logo" src="img/google_logo.png" alt="Google Logo">
+    <form class="search-form" action="https://www.google.com/search" method="GET" id="searchForm">
+        <button class="icon-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input class="search-input" type="text" name="q" placeholder="Search Google or type a URL">
+        <div class="search-icon-container">
+            <button class="icon-button" type="button">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <button class="icon-button" type="button">
+                <i class="fa-solid fa-camera"></i>
+            </button>
+            <button type="submit" 
+                    formaction="https://www.google.com/search" 
+                    class="ai-mode-button">
+                <input type="hidden" name="udm" value="50"> <!--Mã lệnh yêu cầu máy chủ kích hoạt giao diện AI Overview-->
+                <input type="hidden" name="aep" value="22"> <!--Tham số để chỉ định cấu hình trải nghiệm người dùng (Experiment ID)-->
+<!--Xóa 2 dòng trên mất AI Mode-->
+                <img class="ai-icon" src="https://www.gstatic.com/images/icons/material/system_gm/1x/flare_black_24dp.png" alt="spark">
+                <span>AI Mode</span>
+            </button>
+        </div>
+    </form>
+</section>
+<div class="shortcuts-container">
+    <a href="https://gmail.google.com" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/gmail.png" alt="Gmail Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">Gmail</span>
+    </a>
+    <a href="https://chatgpt.com" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/chatgpt.png" alt="ChatGPT Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">ChatGPT</span>
+    </a>
+    <a href="https://drive.google.com" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/ggdrive.png" alt="Google Drive Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">Google Drive</span>
+    </a>
+   <a href="https://lms.hvnh.edu.vn" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/lms.png" alt="LMS Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">LMS</span>
+    </a>
+    <a href="https://google.com" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/logo google.png" alt="Google Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">Google</span>
+    </a>
+    <a href="https://w3schools.com" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/w3schools.png" alt="W3Schools Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">W3Schools</span>
+    </a>
+    <a href="https://monica.im/" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/monicaai.jpg" alt="Monica AI Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">Monica</span>
+    </a>
+    <a href="https://vnexpress.net" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/logo bao.png" alt="VnExpress Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">VnExpress</span>
+    </a>
+    <a href="https://online.hvnh.edu.vn" class="shortcut-item">
+        <div class="shortcut-icon">
+            <img src="img/logoctt.png" alt="CTT HVNH Icon" class="custom-icon-img">
+        </div>
+        <span class="shortcut-text">Học viện Ngân Hàng</span>
+    </a>
+   <a href="#" class="shortcut-item">
+        <div class="shortcut-icon">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <span class="shortcut-text">Add shortcut</span>
+    </a>
+</div>
+</body>
+</html>
